@@ -1,0 +1,40 @@
+{% extends 'herança.html' %}{% block conteudo %}
+<style>
+    body {
+        background-color: rgba(149, 216, 224, 0.623);
+        width: 1300px;
+        margin-top: 50px;
+    }
+    
+    .btapi {
+        border-radius: 5px;
+        position: absolute;
+        margin-left: 1122px;
+        margin-top: 10px;
+    }
+</style>
+
+
+<form action="{{url_for('pg2')}}" method="POST" enctype="multipart/form-data" class="form2">
+    <h1 class="h1_2">Subir_imagem</h1>
+    <hr>
+    <label class="label3" for="file">Files</label>
+    <input type="file" name="file" value="" required class="input2" style="background-color: #E8E8E8; border: 1px solid #000000;">
+    <br>
+    <label class="label4" for="texto">Nome_URL</label>
+    <input type="text" name="texto" value="" required class="input4" style="background-color: #E8E8E8; border: 1px solid #000000;">
+    <br>
+    <input class="Botao2" type="submit" value="enviar">
+</form>
+
+<div class="links">
+    {% if t %}
+    <h2>Lista de links gerados</h2>
+    <ul>
+        {% for t in t %}
+        <a style="color: blue;" href="{{url_for('minha_url',texto=t)}}">
+            <li>{{t}}</li>
+        </a> {% endfor %}
+    </ul>
+    {% endif %}
+</div>{% endblock %}

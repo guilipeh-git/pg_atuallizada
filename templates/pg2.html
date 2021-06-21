@@ -1,0 +1,25 @@
+{% extends 'herança.html' %}{% block conteudo %}
+<style>
+    body {
+        background-color: rgba(149, 216, 224, 0.623);
+    }
+    
+    element.style {
+        margin-top: auto;
+        margin-left: 300px;
+    }
+</style>
+
+<body>
+    <h1 class=h1 style="margin-left: 300px;margin-top: 0px">{{ titulo }}</h1>
+    {% for pos in url %}
+    <table class="table_pg2" style=" margin-left: 240px; width: 50%;">
+        <tr>
+            <td class="pg2_td">{{pos}} <br> </td>
+        </tr>
+    </table>
+    {% endfor%}
+    <form action="/">
+        <input class="botão" type="submit" value="Home" style="margin-left: 450px; margin-top:30px;">
+    </form>{% endblock %}
+</body>

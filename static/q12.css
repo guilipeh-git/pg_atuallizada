@@ -1,0 +1,200 @@
+    .body {
+        background-color: rgba(149, 216, 224, 0.623);
+    }
+    
+    .botão {
+        padding: 3px 17px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 9px;
+        box-shadow: 0 9px rgb(129, 127, 127);
+        margin-top: 46px;
+        margin-left: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .Botao2 {
+        padding: 3px 17px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 9px;
+        box-shadow: 0 9px rgb(129, 127, 127);
+        margin-top: 36px;
+        margin-left: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .h1 {
+        margin-top: 10px;
+        margin-left: 150px;
+        color: black;
+    }
+    
+    .h1_2 {
+        margin-top: 10px;
+        margin-left: 120px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .label1 {
+        margin-top: 1px;
+        margin-left: 215px;
+        color: rgb(0, 0, 0)
+    }
+    
+    .input1 {
+        margin-top: 10px;
+        margin-left: 120px;
+        padding: 2px 40px;
+        color: black;
+        border-radius: 3px;
+    }
+    
+    .form1 {
+        border: 2px solid;
+        border-radius: 9px;
+        width: 500px;
+        margin-left: 150px;
+        margin-top: 170px;
+        border-color: rgba(0, 0, 0, 0.459);
+        background-color: rgb(206, 203, 203);
+    }
+    
+    .input2 {
+        margin-top: 10px;
+        margin-left: 35px;
+        padding: 2px 40px;
+        color: black;
+        border-radius: 3px;
+    }
+    
+    .input4 {
+        margin-top: 10px;
+        margin-left: 119px;
+        padding: 2px 40px;
+        color: black;
+        border-radius: 3px;
+    }
+    
+    .label3 {
+        margin-top: 3px;
+        margin-left: 225px;
+        color: rgb(0, 0, 0)
+    }
+    
+    .label4 {
+        margin-top: 3px;
+        margin-left: 200px;
+        color: rgb(0, 0, 0)
+    }
+    
+    .form2 {
+        border: 2px solid;
+        border-radius: 9px;
+        width: 40%;
+        margin-left: 255px;
+        margin-top: 200px;
+        border-color: rgba(0, 0, 0, 0.459);
+        background-color: rgb(206, 203, 203);
+    }
+    
+    .links {
+        color: rgb(5, 5, 5);
+        margin-top: 30px;
+        margin-left: 180px;
+    }
+    
+    .apii {
+        color: black;
+        border: 1px solid;
+    }
+    
+    .api {
+        border: 2px solid;
+        border-color: rgb(154, 154, 158);
+        width: 1348px;
+    }
+    
+    .pg2_td {
+        width: 348px;
+        border: 1px solid;
+        font-family: cursive;
+    }
+    
+    .table_pg2 {
+        background-color: rgb(202, 202, 204);
+        margin-top: 5px;
+    }
+    
+    .ind_a {
+        margin-left: 0px;
+    }
+    
+    .img {
+        position: absolute;
+        margin-left: 397px;
+        margin-top: -200px;
+    }
+    
+    .alert {
+        position: absolute;
+        margin-top: -65px;
+        margin-left: 560px;
+        width: 100%;
+        background-color: transparent;
+        border: transparent;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    h6,
+    .h6,
+    h5,
+    .h5,
+    h4,
+    .h4,
+    h3,
+    .h3,
+    h2,
+    .h2,
+    h1,
+    .h1 {
+        margin-top: -550px;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-left: -159px;
+    }
+    
+    h6,
+    .h6,
+    h5,
+    .h5,
+    h4,
+    .h4,
+    h3,
+    .h3,
+    h2,
+    .h2,
+    h1,
+    .h1 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
+    .btapi {
+        border-radius: 5px;
+        position: absolute;
+        margin-left: 720px;
+        margin-top: 10px;
+    }
