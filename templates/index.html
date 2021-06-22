@@ -21,20 +21,22 @@
     <label class="label4" for="texto">Nome_URL</label>
     <input type="text" name="texto" value="" required class="input4" style="background-color: #E8E8E8; border: 1px solid #000000;">
     <br>
-    <input class="Botao2" type="submit" value="enviar" onclick=bt()> {% if rp1 == rp2 %}
+    <input class="Botao2" type="submit" value="enviar" onclick=bt()>
 
     <script>
         function bt() {
+            res = confirm('Deseja subir essa imagem ?');
+            if (res == false) {
+                document.write();
+                window.location.replace('http://127.0.0.1:8080')
 
-            res = confirm('Deseja alterar essa imagem ?')
-
-        }
-        if (res == true) {
-            window.location.href = "/fwgfiwh"
+            }
         }
     </script>
-    {% endif %}
+
 </form>
+
+
 <div class="links">
     {% if t %}
     <h2>Lista de links gerados</h2>

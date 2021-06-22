@@ -6,18 +6,30 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 app.secret_key = 'gfpa'
 
-@app.route('/')
+@app.route('/',methods=["POST","GET"])
 def index():
     if os.path.exists('urls.json'):
             with open('urls.json') as urls_file:
                 urls = json.load(urls_file)
-                return render_template('index.html',t = urls.keys())
+                return render_template('index.html',t = urls)
                 
     return render_template('index.html',t = session.keys())
+res = " "
+@app.route('/tt',methods=["POST","GET"])
+def index1():     
+    res = False
+    if os.path.exists('urls.json'):
+            with open('urls.json') as urls_file:
+                urls = json.load(urls_file)
+                return render_template('index.html',t = urls)
+    return render_template('index.html')
+    
+    
 
 
 @app.route('/pg2',methods=["POST","GET"])
 def pg2():
+    res = True
     if request.method == "POST":
         urls = dict()
 
@@ -26,7 +38,7 @@ def pg2():
                 urls = json.load(urls_file)
         #===========================================================
         
-        if request.form['texto'] in urls.keys() and request.form['texto'] != " ": 
+        if request.form['texto'] in urls.keys(): 
                      
             resp = request.form['texto']
             resp2 = urls.keys()
@@ -42,7 +54,7 @@ def pg2():
                 session[request.form['texto']] = True
             flash('URL exportada com Sucesso')
             return redirect(url_for('index'))
-        else:   
+        if res == True:
             session[request.form['texto']] = True
             flash('URL exportada com Sucesso')
             f = request.files['file']
@@ -55,6 +67,7 @@ def pg2():
                 json.dump(urls,urls_file)
         
             return redirect(url_for('index'))
+        return redirect(url_for('index'))
     else:
         return redirect(url_for('index'))
 
